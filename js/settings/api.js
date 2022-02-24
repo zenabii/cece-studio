@@ -1,0 +1,1 @@
+export const baseUrl = "https://cece-studio.herokuapp.com/";

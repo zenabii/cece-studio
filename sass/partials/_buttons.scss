@@ -1,0 +1,21 @@
+.shopButton {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  padding: 20px 40px 20px 40px;
+  margin-top: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.shopButton:hover {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}

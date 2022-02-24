@@ -7750,8 +7750,16 @@ fieldset:disabled .btn {
   top: 0 !important;
 }
 
+.top-10 {
+  top: 10% !important;
+}
+
 .top-50 {
   top: 50% !important;
+}
+
+.top-90 {
+  top: 90% !important;
 }
 
 .top-100 {
@@ -7762,8 +7770,16 @@ fieldset:disabled .btn {
   bottom: 0 !important;
 }
 
+.bottom-10 {
+  bottom: 10% !important;
+}
+
 .bottom-50 {
   bottom: 50% !important;
+}
+
+.bottom-90 {
+  bottom: 90% !important;
 }
 
 .bottom-100 {
@@ -7774,8 +7790,16 @@ fieldset:disabled .btn {
   left: 0 !important;
 }
 
+.start-10 {
+  left: 10% !important;
+}
+
 .start-50 {
   left: 50% !important;
+}
+
+.start-90 {
+  left: 90% !important;
 }
 
 .start-100 {
@@ -7786,8 +7810,16 @@ fieldset:disabled .btn {
   right: 0 !important;
 }
 
+.end-10 {
+  right: 10% !important;
+}
+
 .end-50 {
   right: 50% !important;
+}
+
+.end-90 {
+  right: 90% !important;
 }
 
 .end-100 {
@@ -11955,6 +11987,14 @@ fieldset:disabled .btn {
   background-color: white !important;
 }
 
+#front-page {
+  height: 500px;
+}
+
+.text-wrap {
+  width: 14rem;
+}
+
 .img_logo {
   width: 230px;
 }
@@ -11962,5 +12002,104 @@ fieldset:disabled .btn {
 html,
 body {
   margin: 5px;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid black;
+  width: 100%;
+  opacity: 1;
+}
+
+.img-header {
+  height: 1000px;
+  background-image: url(../../img/girl-floating-mirrored.jpg);
+  background-position: center;
+  max-width: 100%;
+}
+
+.header-padding {
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+}
+
+h1, .h1 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  line-height: 4.2rem;
+}
+
+h2, .h2 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: white;
+}
+
+h3, .h3 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  color: black;
+  text-align: center;
+}
+
+.white-style {
+  color: white;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.title-section {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.product-title {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+.shopButton {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  padding: 20px 40px 20px 40px;
+  margin-top: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.shopButton:hover {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.product-img {
+  width: 100%;
+}
+
+.product-info {
+  display: -ms-grid;
+  display: grid;
+}
+
+.product-container {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
