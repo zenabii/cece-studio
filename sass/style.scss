@@ -46,9 +46,12 @@
 // scss-docs-end import-stack
 
 //LOCAL
-@import "partials/custom";
+@import "foundations/colors";
+@import "foundations/typography";
+
 @import "partials/base";
-@import "partials/headers";
-@import "partials/typography";
+@import "partials/images";
 @import "partials/buttons";
 @import "partials/products";
+@import "partials/custom";
+@import "partials/footer";

@@ -1,10 +1,10 @@
 .shopButton {
-  border: 1px solid white;
+  border: 1px solid $primary-white;
   border-radius: 50%;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 1.2rem;
-  color: white;
+  color: $primary-white;
   text-decoration: none;
   padding: 20px 40px 20px 40px;
   margin-top: 20px;
@@ -13,9 +13,31 @@
 }
 
 .shopButton:hover {
-  border: 2px solid black;
-  background-color: white;
-  color: black;
+  border: 2px solid $primary-black;
+  background-color: $primary-white;
+  color: $primary-black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.shopButtonBlack {
+  border: 1px solid $primary-black;
+  border-radius: 50%;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: $primary-black;
+  text-decoration: none;
+  padding: 20px 40px 20px 40px;
+  margin-top: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.shopButtonBlack:hover {
+  border: 2px solid $primary-black;
+  background-color: $primary-white;
+  color: $primary-black;
   font-weight: 600;
   text-decoration: none;
 }

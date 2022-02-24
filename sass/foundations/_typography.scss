@@ -1,0 +1,82 @@
+h1 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  line-height: 4.2rem;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: $primary-white;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  color: black;
+  text-align: center;
+}
+
+h4 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: black;
+  text-align: right;
+}
+
+h5 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: black;
+  text-align: left;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.white-style {
+  color: $primary-white;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: $primary-white;
+
+  &.paragraph {
+    color: $primary-black;
+    text-align: right;
+    width: 300px;
+    margin-left: auto;
+    padding-top: 30px;
+  }
+
+  &.footer-paragraph {
+    color: $primary-white;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+}
+
+.text-content {
+  padding-top: 40px;
+}
+
+.title-section {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.product-title {
+  text-decoration: none;
+  color: $primary-black;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}

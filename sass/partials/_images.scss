@@ -1,0 +1,31 @@
+.img-header {
+  height: 1000px;
+  background-image: url(../../img/girl-floating-mirrored.jpg);
+  background-position: center;
+  max-width: 100%;
+}
+
+.header-padding {
+  padding: 20px;
+  display: grid;
+}
+
+.full-width-img {
+  width: 100%;
+  object-fit: cover;
+  height: 700px;
+  margin-top: 10px;
+}
+
+.medium-img {
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+  margin-top: 50px;
+}
+
+.white-logo {
+  width: 200px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}

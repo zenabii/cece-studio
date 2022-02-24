@@ -9,7 +9,22 @@ body {
 
 hr {
   border: 0;
-  border-top: 2px solid black;
+  border-top: 2px solid $primary-black;
   width: 100%;
   opacity: 1;
+}
+
+.left-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr;
 }

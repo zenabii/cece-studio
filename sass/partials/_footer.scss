@@ -1,0 +1,10 @@
+footer {
+  background-color: $secondary-black;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 50px;
+}
+
+.footer-flex-right {
+  margin: 0 auto;
+}

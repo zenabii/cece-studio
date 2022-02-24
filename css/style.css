@@ -11983,16 +11983,87 @@ fieldset:disabled .btn {
   }
 }
 
-.bg-light {
-  background-color: white !important;
+h1, .h1 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  line-height: 4.2rem;
 }
 
-#front-page {
-  height: 500px;
+h2, .h2 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #fff;
 }
 
-.text-wrap {
-  width: 14rem;
+h3, .h3 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  color: black;
+  text-align: center;
+}
+
+h4, .h4 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: black;
+  text-align: right;
+}
+
+h5, .h5 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: black;
+  text-align: left;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.white-style {
+  color: #fff;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+p.paragraph {
+  color: #000000;
+  text-align: right;
+  width: 300px;
+  margin-left: auto;
+  padding-top: 30px;
+}
+
+p.footer-paragraph {
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.text-content {
+  padding-top: 40px;
+}
+
+.title-section {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.product-title {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
 }
 
 .img_logo {
@@ -12006,9 +12077,36 @@ body {
 
 hr {
   border: 0;
-  border-top: 2px solid black;
+  border-top: 2px solid #000000;
   width: 100%;
   opacity: 1;
+}
+
+.left-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.news-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .img-header {
@@ -12024,57 +12122,35 @@ hr {
   display: grid;
 }
 
-h1, .h1 {
-  font-family: "Playfair Display", serif;
-  text-transform: uppercase;
-  font-size: 3.5rem;
-  letter-spacing: 0.5rem;
-  line-height: 4.2rem;
+.full-width-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 700px;
+  margin-top: 10px;
 }
 
-h2, .h2 {
-  font-family: "Playfair Display", serif;
-  text-transform: uppercase;
-  font-size: 2rem;
-  color: white;
+.medium-img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 400px;
+  margin-top: 50px;
 }
 
-h3, .h3 {
-  font-family: "Playfair Display", serif;
-  text-transform: uppercase;
-  font-size: 1.9rem;
-  color: black;
-  text-align: center;
-}
-
-.white-style {
-  color: white;
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  color: white;
-}
-
-.title-section {
-  margin-top: 80px;
-  margin-bottom: 50px;
-}
-
-.product-title {
-  text-decoration: none;
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.2rem;
+.white-logo {
+  width: 200px;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 .shopButton {
-  border: 1px solid white;
+  border: 1px solid #fff;
   border-radius: 50%;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 1.2rem;
-  color: white;
+  color: #fff;
   text-decoration: none;
   padding: 20px 40px 20px 40px;
   margin-top: 20px;
@@ -12083,9 +12159,31 @@ p {
 }
 
 .shopButton:hover {
-  border: 2px solid black;
-  background-color: white;
-  color: black;
+  border: 2px solid #000000;
+  background-color: #fff;
+  color: #000000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.shopButtonBlack {
+  border: 1px solid #000000;
+  border-radius: 50%;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #000000;
+  text-decoration: none;
+  padding: 20px 40px 20px 40px;
+  margin-top: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.shopButtonBlack:hover {
+  border: 2px solid #000000;
+  background-color: #fff;
+  color: #000000;
   font-weight: 600;
   text-decoration: none;
 }
@@ -12101,5 +12199,56 @@ p {
 
 .product-container {
   margin-bottom: 20px;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+#front-page {
+  height: 500px;
+}
+
+.text-wrap {
+  width: 14rem;
+}
+
+.input-group {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.form-control {
+  border-radius: 0;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #fff;
+}
+
+.btn-outline-secondary {
+  border-color: #fff;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+footer {
+  background-color: #2d2d2d;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding-top: 50px;
+}
+
+.footer-flex-right {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
