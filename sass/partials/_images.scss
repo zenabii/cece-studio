@@ -8,12 +8,26 @@
 .header-padding {
   padding: 20px;
   display: grid;
+  position: absolute;
+  bottom: 150px;
+}
+
+.title-padding {
+  padding: 20px;
 }
 
 .full-width-img {
   width: 100%;
   object-fit: cover;
   height: 700px;
+  margin-top: 10px;
+}
+
+.full-width-img-alternative {
+  width: 100%;
+  object-fit: cover;
+  object-position: 0px 0px;
+  height: 500px;
   margin-top: 10px;
 }
 

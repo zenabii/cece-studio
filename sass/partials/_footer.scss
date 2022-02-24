@@ -1,4 +1,9 @@
 footer {
+  width: 100%;
+  background-color: $secondary-black;
+}
+
+.footer-grid {
   background-color: $secondary-black;
   display: grid;
   grid-template-columns: 1fr;
