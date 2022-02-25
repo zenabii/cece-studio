@@ -12115,6 +12115,10 @@ hr {
   max-width: 100%;
 }
 
+.top-header {
+  max-width: 100%;
+}
+
 .header-padding {
   padding: 20px;
   display: -ms-grid;
@@ -12216,6 +12220,10 @@ hr {
   margin-bottom: 20px;
 }
 
+.view-more {
+  padding-bottom: 100px;
+}
+
 .bg-light {
   background-color: #fff !important;
 }
@@ -12311,10 +12319,19 @@ footer {
   .medium-img {
     margin-top: 10px;
   }
+  .view-more {
+    width: 100%;
+  }
 }
 
 /*MIN 1024px*/
 @media screen and (min-width: 1024px) {
+  .top-header {
+    height: 300px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .title-padding {
     position: absolute;
     bottom: 640px;
@@ -12358,6 +12375,9 @@ footer {
 
 /*MIN 1400px*/
 @media screen and (min-width: 1400px) {
+  .top-header {
+    height: 400px;
+  }
   .img-header {
     background-position: center;
     background-repeat: no-repeat;

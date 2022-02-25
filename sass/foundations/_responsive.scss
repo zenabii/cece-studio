@@ -47,10 +47,20 @@
   .medium-img {
     margin-top: 10px;
   }
+
+  .view-more {
+    width: 100%;
+  }
 }
 
 /*MIN 1024px*/
 @include media-large {
+  .top-header {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .title-padding {
     position: absolute;
     bottom: 640px;
@@ -104,6 +114,10 @@
 
 /*MIN 1400px*/
 @include media-xlarge {
+  .top-header {
+    height: 400px;
+  }
+
   .img-header {
     background-position: center;
     background-repeat: no-repeat;
