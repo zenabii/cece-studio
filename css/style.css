@@ -11991,11 +11991,28 @@ h1, .h1 {
   line-height: 4.2rem;
 }
 
+h1.product-name, .product-name.h1 {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-top: 20px;
+}
+
 h2, .h2 {
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
   font-size: 2rem;
   color: #fff;
+}
+
+h2.product-price, .product-price.h2 {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
 h3, .h3 {
@@ -12004,6 +12021,10 @@ h3, .h3 {
   font-size: 1.9rem;
   color: black;
   text-align: center;
+}
+
+h3.description, .description.h3 {
+  margin-top: 50px;
 }
 
 h4, .h4 {
@@ -12048,6 +12069,13 @@ p.footer-paragraph {
   width: 300px;
   margin: 0 auto;
   padding-top: 30px;
+}
+
+p.details {
+  color: #000000;
+  text-align: left;
+  width: 300px;
+  margin-top: 10px;
 }
 
 .text-content {
@@ -12224,6 +12252,14 @@ hr {
   padding-bottom: 100px;
 }
 
+.product-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 50px 0px;
+}
+
 .bg-light {
   background-color: #fff !important;
 }
@@ -12288,6 +12324,19 @@ footer {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
+  .product-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 750px;
+    margin: 0 auto;
+  }
+  .product-desc-container {
+    margin-left: 20px;
+  }
   .product-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12331,6 +12380,12 @@ footer {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .product-grid {
+    width: 1000px;
+  }
+  .product-desc-container {
+    margin-top: 50px;
   }
   .title-padding {
     position: absolute;
@@ -12377,6 +12432,12 @@ footer {
 @media screen and (min-width: 1400px) {
   .top-header {
     height: 400px;
+  }
+  .product-img-container {
+    width: 700px;
+  }
+  .product-grid {
+    width: 1400px;
   }
   .img-header {
     background-position: center;

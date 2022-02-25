@@ -13,3 +13,9 @@
 .view-more {
   padding-bottom: 100px;
 }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 50px 0px;
+}
