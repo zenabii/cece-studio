@@ -41,3 +41,19 @@
   font-weight: 600;
   text-decoration: none;
 }
+
+.button-container {
+  margin: 0 auto;
+}
+
+.btn-outline-primary {
+  color: $primary-black;
+  border-color: $primary-black;
+  text-transform: uppercase;
+}
+
+.btn-outline-primary:hover {
+  color: $primary-white;
+  background-color: $primary-black;
+  border-color: $primary-black;
+}

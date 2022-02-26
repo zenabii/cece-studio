@@ -133,7 +133,8 @@
 
 /*MIN 1400px*/
 @include media-xlarge {
-  .top-header {
+  .top-header,
+  .top-header-login {
     height: 400px;
   }
 

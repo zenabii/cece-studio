@@ -35,3 +35,28 @@
 .btn {
   border-radius: 0;
 }
+
+.form-control-dark {
+  border-radius: 0;
+  background-color: transparent;
+  color: $primary-white;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid $primary-black;
+}
+
+.input-group-dark {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
