@@ -1,10 +1,10 @@
 import { baseUrl } from "./settings/api.js";
 
-const productsUrl = baseUrl + "products?featured=true";
+const productsUrl = baseUrl + "products";
 
 (async function() {
 
-    const container = document.querySelector(".featured-content")
+    const container = document.querySelector(".all-products")
 
     try {
         const response = await fetch(productsUrl);
@@ -13,7 +13,7 @@ const productsUrl = baseUrl + "products?featured=true";
         container.innerHTML = "";
 
         json.forEach(function (product) {
-            container.innerHTML += `<div class="featured-product-container">
+            container.innerHTML += `<div class="product-container">
                                         <img src="${product.image.formats.medium.url}" class="product-img" alt="${product.image.alternativeText}">
                                         <div class="product-info">
                                             <a href="" class="product-title">${product.title}</a>

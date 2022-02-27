@@ -23,6 +23,11 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .all-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   .product-grid {
     grid-template-columns: 1fr 1fr;
     flex-direction: row;
@@ -34,7 +39,8 @@
     margin-left: 20px;
   }
 
-  .product-container {
+  .product-container,
+  .featured-product-container {
     display: flex;
     flex-direction: column;
     margin: 0px 5px 20px 5px;
@@ -173,6 +179,11 @@
     margin: 0 auto;
   }
 
+  .all-products {
+    max-width: 1360px;
+    margin: 0 auto;
+  }
+
   .lookbook {
     max-width: 1360px;
     margin: 0 auto;
@@ -201,8 +212,9 @@
     margin-top: 20px;
   }
 
-  .product-container {
-    margin: 0px 10px;
+  .product-container,
+  .featured-product-container {
+    margin: 0px 10px 20px 10px;
   }
 
   .left-grid {
