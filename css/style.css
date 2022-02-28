@@ -12138,13 +12138,18 @@ hr {
 
 .img-header {
   height: 1000px;
-  background-image: url(../../img/girl-floating-mirrored.jpg);
-  background-position: center;
   max-width: 100%;
 }
 
 .top-header {
   max-width: 100%;
+}
+
+.top-img {
+  width: 100%;
+  height: 1000px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .top-header-login {
@@ -12450,6 +12455,9 @@ footer {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .top-img {
+    height: 700px;
   }
   .product-grid {
     width: 1000px;
