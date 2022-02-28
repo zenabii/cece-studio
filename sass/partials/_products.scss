@@ -23,3 +23,8 @@
   grid-template-columns: 1fr;
   padding: 50px 0px;
 }
+
+.product-info-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

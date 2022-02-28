@@ -13,7 +13,6 @@
 }
 
 .shopButton:hover {
-  border: 2px solid $primary-black;
   background-color: $primary-white;
   color: $primary-black;
   font-weight: 600;
@@ -35,9 +34,8 @@
 }
 
 .shopButtonBlack:hover {
-  border: 2px solid $primary-black;
-  background-color: $primary-white;
-  color: $primary-black;
+  background-color: $primary-black;
+  color: $primary-white;
   font-weight: 600;
   text-decoration: none;
 }

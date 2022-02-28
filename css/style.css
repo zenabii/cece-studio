@@ -12136,6 +12136,11 @@ hr {
       grid-template-columns: 1fr;
 }
 
+i {
+  color: #000000;
+  text-align: right;
+}
+
 .img-header {
   height: 1000px;
   max-width: 100%;
@@ -12220,7 +12225,6 @@ hr {
 }
 
 .shopButton:hover {
-  border: 2px solid #000000;
   background-color: #fff;
   color: #000000;
   font-weight: 600;
@@ -12242,9 +12246,8 @@ hr {
 }
 
 .shopButtonBlack:hover {
-  border: 2px solid #000000;
-  background-color: #fff;
-  color: #000000;
+  background-color: #000000;
+  color: #fff;
   font-weight: 600;
   text-decoration: none;
 }
@@ -12292,6 +12295,13 @@ hr {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   padding: 50px 0px;
+}
+
+.product-info-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .bg-light {

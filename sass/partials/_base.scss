@@ -27,3 +27,8 @@ hr {
   display: grid;
   grid-template-columns: 1fr;
 }
+
+i {
+  color: $primary-black;
+  text-align: right;
+}
