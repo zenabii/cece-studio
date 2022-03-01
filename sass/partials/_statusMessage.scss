@@ -1,0 +1,11 @@
+.message {
+  border: 1px solid lightgrey;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.01);
+}
+
+.message.error {
+  border-color: red;
+  color: red;
+  background: rgba(255, 0, 0, 0.05);
+}
