@@ -60,6 +60,16 @@ h5 {
   margin-bottom: 50px;
 }
 
+h6 {
+  font-family: "Roboto", sans-serif;
+  color: $primary-black;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
 .white-style {
   color: $primary-white;
 }

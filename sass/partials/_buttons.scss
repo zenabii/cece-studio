@@ -68,3 +68,16 @@
   color: $primary-white;
   background-color: $primary-black;
 }
+
+.btn-primary {
+  background-color: $primary-black;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid $primary-black;
+}
+
+.btn-primary:hover {
+  background-color: $primary-white;
+  border: 1px solid $primary-black;
+  color: $primary-black;
+}

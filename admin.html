@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Login page for users at Cece Studio">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/070535f28d.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Cece Studio</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex ">
+        <div class="container-fluid">
+          <a href="index.html"><img src="img/logo-black.svg" alt="black cece studio logo" class="img_logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="index.html">home</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="products.html">products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="cart.html">cart(0)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-uppercase" aria-current="page" href="login.html">login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <section class="top-header">
+      <img src="img/girl-jacket-sunglasses-brunette.jpg" alt="young males in black sweatshirts outside" class="top-header-login">
+    </section>
+    <div class="title-section">
+      <hr>
+      <h3>
+        admin panel
+      </h3>
+      <hr>
+    </div>
+    <section class="add-products">
+        <h6>add new product</h4>
+        <div class="input-group upload mb-3">
+            <input type="file" class="form-control edit" id="inputGroupFile02">
+        </div>
+        <div class="input-group upload mb-3">
+            <input type="text" class="form-control edit" placeholder="title" aria-label="title" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group upload mb-3">
+            <input type="text" class="form-control edit" placeholder="price" aria-label="price" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group upload">
+            <textarea class="form-control edit" aria-label="With textarea" placeholder="description"></textarea>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              set as featured product
+            </label>
+          </div>
+          <button type="button" class="btn btn-primary">upload</button>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-grid">
+        <div class="footer-flex-left">
+          <h3 class="white-style">newsletter</h3>
+          <p class="footer-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing 
+          elit. Etiam non auctor dolor. Nam ac velit dictum, vol
+          utpat lectus vitae, 
+          </p>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="enter your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">send</button>
+          </div>
+        </div>
+        <div class="footer-flex-right">
+          <img src="img/logo-white.svg" alt="white cece studio logo" class="white-logo">
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

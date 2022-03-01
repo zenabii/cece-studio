@@ -14,6 +14,11 @@
   width: 300px;
   margin: 0 auto;
   margin-top: 50px;
+
+  &.upload {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
 }
 
 .form-control {
@@ -28,6 +33,10 @@
     border: 1px solid $primary-black;
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
+  }
+
+  &.edit {
+    border: 1px solid $primary-black;
   }
 }
 
@@ -71,4 +80,13 @@
   display: flex;
   flex-direction: row-reverse;
   max-width: 1400px;
+}
+
+.form-check-label {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-check {
+  margin: 20px 0px;
 }

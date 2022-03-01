@@ -12045,6 +12045,16 @@ h5, .h5 {
   margin-bottom: 50px;
 }
 
+h6, .h6 {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
 .white-style {
   color: #fff;
 }
@@ -12281,6 +12291,19 @@ i {
   background-color: #000000;
 }
 
+.btn-primary {
+  background-color: #000000;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #000000;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
 .product-img {
   width: 100%;
 }
@@ -12335,6 +12358,11 @@ i {
   margin-top: 50px;
 }
 
+.input-group.upload {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
 .form-control {
   border-radius: 0;
   background-color: transparent;
@@ -12348,6 +12376,10 @@ i {
   border: 1px solid #000000;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
+}
+
+.form-control.edit {
+  border: 1px solid #000000;
 }
 
 .btn-outline-secondary {
@@ -12406,6 +12438,15 @@ i {
   max-width: 1400px;
 }
 
+.form-check-label {
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-check {
+  margin: 20px 0px;
+}
+
 footer {
   width: 100%;
   background-color: #2d2d2d;
@@ -12434,6 +12475,11 @@ footer {
   border-color: red;
   color: red;
   background: rgba(255, 0, 0, 0.05);
+}
+
+.add-products {
+  width: 320px;
+  margin: 0 auto;
 }
 
 /*MIN 768px*/
