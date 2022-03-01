@@ -12268,6 +12268,19 @@ i {
   border-color: #000000;
 }
 
+.btn-outline-filter {
+  border-color: #000000;
+  color: #000000;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-outline-filter:hover {
+  border-color: #000000;
+  color: #fff;
+  background-color: #000000;
+}
+
 .product-img {
   width: 100%;
 }
@@ -12331,6 +12344,12 @@ i {
   border: 1px solid #fff;
 }
 
+.form-control__filter {
+  border: 1px solid #000000;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
 .btn-outline-secondary {
   border-color: #fff;
   color: #fff;
@@ -12374,6 +12393,17 @@ i {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 100px;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  max-width: 1400px;
 }
 
 footer {

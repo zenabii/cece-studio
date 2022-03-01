@@ -23,6 +23,12 @@
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   border: 1px solid $primary-white;
+
+  &__filter {
+    border: 1px solid $primary-black;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+  }
 }
 
 .btn-outline-secondary {
@@ -59,4 +65,10 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 1400px;
 }

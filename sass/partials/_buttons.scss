@@ -55,3 +55,16 @@
   background-color: $primary-black;
   border-color: $primary-black;
 }
+
+.btn-outline-filter {
+  border-color: $primary-black;
+  color: $primary-black;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-outline-filter:hover {
+  border-color: $primary-black;
+  color: $primary-white;
+  background-color: $primary-black;
+}
