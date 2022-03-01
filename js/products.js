@@ -1,39 +1,26 @@
 import { baseUrl } from "./settings/api.js";
+import renderProducts from "./ui/renderProducts.js";
+import { searchProducts } from "./components/searchProducts.js";
 
-const productsUrl = baseUrl + "products";
+console.log("kek");
 
-(async function() {
+let products;
 
-    const container = document.querySelector(".all-products")
+async function fetchProducts() {
 
+    const productsUrl = baseUrl + "products";
     try {
         const response = await fetch(productsUrl);
         const json = await response.json();
 
-        container.innerHTML = "";
-
-        json.forEach(function (product) {
-            container.innerHTML += `<div class="product-container">
-                                        <a href="product.html?id=${product.id}">
-                                        <img src="${product.image.formats.medium.url}" class="product-img" alt="${product.image.alternativeText}">
-                                        </a>
-                                        <div class="product-info-container">
-                                            <div class="product-info">
-                                                <a href="product.html?id=${product.id}" class="product-title">${product.title}</a>
-                                                <a href="product.html?id=${product.id}" class="product-title">${product.price} NOK</a>
-                                            </div>
-                                            <div class="product-info">
-                                            <i class="fa-regular fa-heart fa-2x"></i>
-                                            </div>
-                                        </div>              
-                                    </div>
-            
-            `
-        });
-
+        products = json;
+        renderProducts(products);
+        searchProducts(products);
 
     } catch (error) {
         console.log(error);
+        container.innerHTML = displayMessage("error", error);
     }
+};
 
-})();
+fetchProducts();

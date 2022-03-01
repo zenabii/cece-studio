@@ -1,10 +1,9 @@
 import { baseUrl } from "../settings/api.js";
-import { displayMessage } from "./displayMessage.js";
+import { displayMessage } from "../components/displayMessage.js";
 
-const productsUrl = baseUrl + "products?featured=true";
 
 async function featuredProducts() {
-
+    const productsUrl = baseUrl + "products?featured=true";
     const container = document.querySelector(".featured-content")
     container.innerHTML = "";
 

@@ -1,10 +1,10 @@
 import { baseUrl } from "../settings/api.js";
-import { displayMessage } from "./displayMessage.js";
+import { displayMessage } from "../components/displayMessage.js";
 
-const bannerUrl = baseUrl + "home?id=1";
 
 async function heroBanner() {
-
+    
+    const bannerUrl = baseUrl + "home?id=1";
     const heroContainer = document.querySelector(".img-header")
     heroContainer.innerHTML = "";
 
