@@ -2,8 +2,6 @@ import { baseUrl } from "./settings/api.js";
 import renderProducts from "./ui/renderProducts.js";
 import { searchProducts } from "./components/searchProducts.js";
 
-console.log("kek");
-
 let products;
 
 async function fetchProducts() {

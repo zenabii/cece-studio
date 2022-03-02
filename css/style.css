@@ -12305,6 +12305,18 @@ i {
   color: #000000;
 }
 
+i {
+  color: #979797;
+}
+
+i:hover {
+  color: #c5a2e6;
+}
+
+.far {
+  color: #c275b1;
+}
+
 .product-img {
   width: 100%;
 }
