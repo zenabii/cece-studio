@@ -12313,8 +12313,12 @@ i:hover {
   color: #c5a2e6;
 }
 
-.far {
+.fa {
   color: #c275b1;
+}
+
+.far {
+  color: #979797;
 }
 
 .product-img {
