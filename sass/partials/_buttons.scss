@@ -82,18 +82,34 @@
   color: $primary-black;
 }
 
-i {
-  color: rgb(151, 151, 151);
-}
+// i {
+//   color: rgb(151, 151, 151);
+// }
 
 i:hover {
   color: rgb(197, 162, 230);
 }
 
-.fa {
+.fa-solid {
   color: rgb(194, 117, 177);
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
 }
 
-.far {
+.far-solid {
   color: rgb(151, 151, 151);
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
 }

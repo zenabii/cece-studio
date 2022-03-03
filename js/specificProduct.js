@@ -18,7 +18,7 @@ async function getProduct(productUrl) {
     const response = await fetch(productUrl);
     const product = await response.json();
 
-    let cssClass = "far"
+    let cssClass = "fa-solid"
 
     //check favs through array
     //does id already exist in the favs array
@@ -31,15 +31,15 @@ async function getProduct(productUrl) {
     console.log(doesObjectExist);
 
     if(doesObjectExist) {
-        let cssClass = "fa"
+        let cssClass = "fa-solid"
     }
 
     document.title =`${product.title}`;
     productImg.innerHTML = `<img src="${product.image.formats.large.url}" id="productImg" class="d-block w-100" alt="${product.image.alternativeText}">`;
     productName.innerHTML= product.title;
-    productPrice.innerHTML = product.price + "NOK" + "id:" + product.id;
+    productPrice.innerHTML = product.price + "NOK";
     productDescription.innerHTML = product.description;
-    addToCart.innerHTML = `<a href="#" class="shopButtonBlack">add to cart <i class="${cssClass}  fa-solid fa-heart fa-2x" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-img="${product.image.formats.large.url}"></i></a>`;
+    addToCart.innerHTML = `<a href="#" class="shopButtonBlack">add to cart <i class="${cssClass} fa-heart fa-2x" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-img="${product.image.formats.large.url}"></i></a>`;
 
 
     addProductToCart();
@@ -58,8 +58,8 @@ function addProductToCart() {
 };
 
 function handleClick() {
-    this.classList.toggle("fa");
-    this.classList.toggle("far");
+    this.classList.toggle("fa-solid");
+    this.classList.toggle("far-solid");
 
 
     const title = this.dataset.title;

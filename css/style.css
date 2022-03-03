@@ -12305,20 +12305,32 @@ i {
   color: #000000;
 }
 
-i {
-  color: #979797;
-}
-
 i:hover {
   color: #c5a2e6;
 }
 
-.fa {
+.fa-solid {
   color: #c275b1;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
 }
 
-.far {
+.far-solid {
   color: #979797;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
 }
 
 .product-img {
