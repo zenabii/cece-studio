@@ -30,9 +30,11 @@ favorites.forEach(favorite => {
                                         <a href="product.html?id=${favorite.id}" class="product-title">${favorite.price} NOK</a>
                                     </div>
                                     <div class="product-info">
-                                    <i class="fa-solid fa-heart fa-2x"></i></a>
+                                    <i class="fa-solid fa-heart fa-2x" data-id="${favorite.id}" data-title="${favorite.title}" data-price="${favorite.price}" data-img="${favorite.img}"></i>
                                     </div>
                                 </div>              
                             </div>          
                                 `
 })
+
+

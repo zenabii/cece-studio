@@ -19,7 +19,7 @@ async function getProduct(productUrl) {
     const response = await fetch(productUrl);
     const product = await response.json();
 
-    let cssClass = "fa-solid"
+    let cssClass = "far-solid"
 
     //check favs through array
     //does id already exist in the favs array

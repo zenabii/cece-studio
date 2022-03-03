@@ -1,5 +1,5 @@
 export function cartCounter(number) {
-    document.getElementById("cartCount").innerHTML = "cart" + number;
+    document.getElementById("cartCount").innerHTML = "cart(" + number + ")";
 
 }
 
