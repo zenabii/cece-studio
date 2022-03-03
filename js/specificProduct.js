@@ -1,5 +1,6 @@
 import { baseUrl } from "./settings/api.js";
 import { getExistingProducts } from "./ui/FavFunctions.js";
+import { cartCounter } from "./components/cartCounter.js";
 
 
 const params = new URLSearchParams(window.location.search);
@@ -23,12 +24,10 @@ async function getProduct(productUrl) {
     //check favs through array
     //does id already exist in the favs array
     const doesObjectExist = favorites.find(function(fav) {
-        console.log(fav)
 
         return parseInt(fav.id) === product.id;
     });
 
-    console.log(doesObjectExist);
 
     if(doesObjectExist) {
         let cssClass = "fa-solid"
@@ -82,6 +81,10 @@ function handleClick() {
         const newFavs = currentFavs.filter(fav => fav.title !== title);
         saveFavs(newFavs);
     }
+
+    
+
+    cartCounter(JSON.parse(localStorage.getItem("favorites")).length);
 
 };
 
