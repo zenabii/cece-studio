@@ -1,5 +1,5 @@
 import { baseUrl } from "./settings/api.js";
-import { getExistingProducts } from "./ui/FavFunctions.js";
+import { getExistingProducts, saveFavs } from "./ui/FavFunctions.js";
 import { cartCounter } from "./components/cartCounter.js";
 
 
@@ -21,16 +21,14 @@ async function getProduct(productUrl) {
 
     let cssClass = "far-solid"
 
-    //check favs through array
-    //does id already exist in the favs array
     const doesObjectExist = favorites.find(function(fav) {
-
-        return parseInt(fav.id) === product.id;
+        console.log(fav.id, product.id)
+        return parseInt(fav.id) == product.id;
     });
 
 
     if(doesObjectExist) {
-        let cssClass = "fa-solid"
+        cssClass = "fa-solid"
     }
 
     document.title =`${product.title}`;
@@ -38,7 +36,7 @@ async function getProduct(productUrl) {
     productName.innerHTML= product.title;
     productPrice.innerHTML = product.price + "NOK";
     productDescription.innerHTML = product.description;
-    addToCart.innerHTML = `<a href="#" class="shopButtonBlack">add to cart <i class="${cssClass} fa-heart fa-2x" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-img="${product.image.formats.large.url}"></i></a>`;
+    addToCart.innerHTML = `<a href="#" class="shopButtonBlack" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-img="${product.image.formats.large.url}">add to cart <i class="${cssClass} fa-heart fa-2x"></i></a>`;
 
 
     addProductToCart();
@@ -49,7 +47,7 @@ getProduct(productUrl);
 
 
 function addProductToCart() {
-    const cartButton = document.querySelectorAll(".button-container i");
+    const cartButton = document.querySelectorAll(".button-container a");
 
     cartButton.forEach((button) => {
         button.addEventListener("click", handleClick);
@@ -57,8 +55,8 @@ function addProductToCart() {
 };
 
 function handleClick() {
-    this.classList.toggle("fa-solid");
-    this.classList.toggle("far-solid");
+    this.children[0].classList.toggle("fa-solid");
+    this.children[0].classList.toggle("far-solid");
 
 
     const title = this.dataset.title;
@@ -88,8 +86,3 @@ function handleClick() {
 
 };
 
-
-
-function saveFavs(favs) {
-    localStorage.setItem("favorites", JSON.stringify(favs));
-}
