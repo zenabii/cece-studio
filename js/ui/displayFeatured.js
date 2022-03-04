@@ -1,5 +1,5 @@
 import { baseUrl } from "../settings/api.js";
-import { displayMessage } from "../components/displayMessage.js";
+import displayMessage from "../components/displayMessage.js";
 
 
 async function featuredProducts() {

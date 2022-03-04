@@ -12425,8 +12425,7 @@ i:hover {
 .form-control-dark {
   border-radius: 0;
   background-color: transparent;
-  color: #fff;
-  text-transform: uppercase;
+  color: #000000;
   font-family: "Roboto", sans-serif;
   border: 1px solid #000000;
 }
@@ -12445,7 +12444,7 @@ i:hover {
   margin: 0 auto;
 }
 
-.login {
+form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12506,6 +12505,25 @@ footer {
   border-color: red;
   color: red;
   background: rgba(255, 0, 0, 0.05);
+}
+
+.message.warning {
+  border-color: orange;
+  color: white;
+  background: orange;
+}
+
+.message.success {
+  border-color: green;
+  color: white;
+  background: green;
+}
+
+.message-container {
+  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .add-products {

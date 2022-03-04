@@ -9,3 +9,22 @@
   color: red;
   background: rgba(255, 0, 0, 0.05);
 }
+
+.message.warning {
+  border-color: orange;
+  color: white;
+  background: orange;
+}
+
+.message.success {
+  border-color: green;
+  color: white;
+  background: green;
+}
+
+.message-container {
+  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
