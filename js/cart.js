@@ -3,6 +3,7 @@ import { cartCounter } from "./components/cartCounter.js";
 import createMenu from "./ui/createMenu.js";
 
 createMenu();
+cartCounter();
 
 const favorites = getExistingProducts();
 

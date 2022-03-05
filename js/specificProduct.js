@@ -4,6 +4,7 @@ import createMenu from "./ui/createMenu.js";
 import { cartCounter } from "./components/cartCounter.js";
 
 createMenu();
+cartCounter();
 
 
 const params = new URLSearchParams(window.location.search);

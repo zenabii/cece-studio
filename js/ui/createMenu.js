@@ -24,13 +24,13 @@ export default function createMenu() {
                             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link text-uppercase" href="index.html">home</a>
+                                        <a class="nav-link text-uppercase ${pathname === "/index.html" ? "active" : ""}" href="index.html">home</a>
                                     </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-uppercase" href="products.html">products</a>
+                                    <a class="nav-link text-uppercase ${pathname === "/products.html" ? "active" : ""}" href="products.html">products</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-uppercase" href="cart.html" id="cartCount">cart(0)</a>
+                                    <a class="nav-link text-uppercase ${pathname === "/cart.html" ? "active" : ""}" href="cart.html" id="cartCount"></a>
                                 </li>
                                 <li class="nav-item">
                                    ${authLink}
