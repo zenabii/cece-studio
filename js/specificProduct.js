@@ -1,6 +1,9 @@
 import { baseUrl } from "./settings/api.js";
 import { getExistingProducts, saveFavs } from "./ui/FavFunctions.js";
+import createMenu from "./ui/createMenu.js";
 import { cartCounter } from "./components/cartCounter.js";
+
+createMenu();
 
 
 const params = new URLSearchParams(window.location.search);
@@ -22,7 +25,6 @@ async function getProduct(productUrl) {
     let cssClass = "far-solid"
 
     const doesObjectExist = favorites.find(function(fav) {
-        console.log(fav.id, product.id)
         return parseInt(fav.id) == product.id;
     });
 

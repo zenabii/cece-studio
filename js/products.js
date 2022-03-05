@@ -1,6 +1,10 @@
 import { baseUrl } from "./settings/api.js";
 import renderProducts from "./ui/renderProducts.js";
 import { searchProducts } from "./components/searchProducts.js";
+import createMenu from "./ui/createMenu.js";
+import { cartCounter } from "./components/cartCounter.js";
+
+createMenu();
 
 let products;
 
@@ -19,6 +23,8 @@ async function fetchProducts() {
         console.log(error);
         container.innerHTML = displayMessage("error", error);
     }
+    cartCounter();
+
 };
 
 fetchProducts();

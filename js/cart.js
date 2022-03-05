@@ -1,5 +1,8 @@
 import { getExistingProducts, saveFavs } from "./ui/FavFunctions.js";
 import { cartCounter } from "./components/cartCounter.js";
+import createMenu from "./ui/createMenu.js";
+
+createMenu();
 
 const favorites = getExistingProducts();
 
@@ -54,8 +57,6 @@ deleteProduct.forEach(function(can) {
 })
 
 function removeFromList(event) {
-
-    console.log(event);
 
     const deleteThisProduct = event.target.dataset.id;
 

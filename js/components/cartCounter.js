@@ -3,5 +3,3 @@ export function cartCounter() {
     document.getElementById("cartCount").innerHTML = "cart(" + number + ")";
 
 }
-
-cartCounter();
