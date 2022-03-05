@@ -1,4 +1,4 @@
-import { getUserName } from "../settings/storage.js";
+import { getUserName, logout } from "../settings/storage.js";
 
 export default function createMenu() {
     const { pathname } = document.location;    
@@ -6,9 +6,11 @@ export default function createMenu() {
     const username = getUserName();
 
     let authLink = `<a class="nav-link text-uppercase ${pathname === "/login.html" ? "active" : ""}" aria-current="page" href="login.html">login</a>`;
+    let logoutLink = ``;
 
     if(username) {
         authLink = `<a class="nav-link text-uppercase ${pathname === "/admin.html" ? "active" : ""}" aria-current="page" href="admin.html">admin</a>`
+        logoutLink = `<li><a class="nav-link text-uppercase ${pathname === "/index.html" ? "active" : ""}" id="logout" aria-current="page" href="index.html">logout</a></li>`
     }
     
     container.innerHTML = `<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex ">
@@ -31,8 +33,17 @@ export default function createMenu() {
                                 <li class="nav-item">
                                    ${authLink}
                                 </li>
+                                ${logoutLink}
                                 </ul>
                             </div>
                             </div>
                         </nav>`
+
+    const logoutButton = document.querySelector("#logout");
+
+    if(logoutButton) {
+        logoutButton.addEventListener("click", logout);
+    }
+
 }
+

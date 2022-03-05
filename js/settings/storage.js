@@ -39,3 +39,9 @@ function getFromStorage(key) {
     return JSON.parse(value);
 
 }
+
+export function logout(event) {
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+
+}
