@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.product-img-edit {
+  width: 320px;
+}
+
 .product-info {
   display: grid;
 }
@@ -27,4 +31,18 @@
 .product-info-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.product-container-edit {
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
+
+.edit-products {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.form-margin {
+  margin: 10px 0px 0px 10px;
 }

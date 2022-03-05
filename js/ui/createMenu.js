@@ -2,10 +2,7 @@ import { getUserName } from "../settings/storage.js";
 
 export default function createMenu() {
     const { pathname } = document.location;    
-   
-
     const container = document.querySelector(".menu-container");
-   
     const username = getUserName();
 
     let authLink = `<a class="nav-link text-uppercase ${pathname === "/login.html" ? "active" : ""}" aria-current="page" href="login.html">login</a>`;
@@ -13,8 +10,7 @@ export default function createMenu() {
     if(username) {
         authLink = `<a class="nav-link text-uppercase ${pathname === "/admin.html" ? "active" : ""}" aria-current="page" href="admin.html">admin</a>`
     }
-
-
+    
     container.innerHTML = `<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex ">
                             <div class="container-fluid">
                             <a href="index.html"><img src="img/logo-black.svg" alt="black cece studio logo" class="img_logo"></a>

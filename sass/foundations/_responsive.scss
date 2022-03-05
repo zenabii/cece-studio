@@ -46,6 +46,11 @@
     margin: 0px 5px 20px 5px;
   }
 
+  .product-container-edit {
+    display: flex;
+    flex-direction: row;
+  }
+
   .news-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -217,7 +222,8 @@
   }
 
   .product-container,
-  .featured-product-container {
+  .featured-product-container,
+  .product-container-edit {
     margin: 0px 10px 20px 10px;
   }
 
@@ -260,5 +266,10 @@
   .navbar {
     max-width: 1440px;
     margin: 0 auto;
+  }
+
+  .edit-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
