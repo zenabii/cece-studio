@@ -13,7 +13,7 @@ export default async function heroBanner() {
         const bannerJson = await bannerResponse.json();
 
 
-        heroContainer.innerHTML = `<img src="${bannerJson.hero_banner.formats.large.url}" alt="${bannerJson.hero_banner.alternativeText}" class="top-img">
+        heroContainer.innerHTML = `<img src="${bannerJson.hero_banner.url}" alt="${bannerJson.hero_banner.alternativeText}" class="top-img">
                                     <div class="title-padding absolute"><h1 class="white-style">new arrivals</h1></div>
                                     <div class="header-padding">
                                         <h2>SS22</h2>
