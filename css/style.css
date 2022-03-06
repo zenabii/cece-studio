@@ -12222,7 +12222,7 @@ body {
 
 .back-to-top i {
   color: #4174ff;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 
 .back-to-top i:hover {
@@ -12239,7 +12239,7 @@ body {
 
 .top-img {
   width: 100%;
-  height: 600px;
+  height: 650px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -12298,7 +12298,7 @@ body {
 }
 
 .header-padding {
-  top: 35%;
+  top: 30%;
 }
 
 .shopButton {
@@ -12712,6 +12712,9 @@ footer {
   .header-padding {
     padding-left: 20px;
   }
+  .header-padding {
+    top: 33%;
+  }
   .absolute {
     top: 28%;
   }
@@ -12793,7 +12796,7 @@ footer {
     top: 36%;
   }
   .header-padding {
-    top: 45%;
+    top: 42%;
   }
   .top-img {
     height: 750px;
@@ -12843,10 +12846,10 @@ footer {
     height: 400px;
   }
   .absolute {
-    top: 38%;
+    top: 35%;
   }
   .header-padding {
-    top: 45%;
+    top: 41%;
   }
   .absolute,
   .header-padding {
