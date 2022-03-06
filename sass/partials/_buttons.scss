@@ -29,8 +29,10 @@
   text-decoration: none;
   padding: 20px 40px 20px 40px;
   margin-top: 20px;
-  width: 200px;
+  width: 250px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .shopButtonBlack:hover {
@@ -82,16 +84,17 @@
   color: $primary-black;
 }
 
-// i {
-//   color: rgb(151, 151, 151);
-// }
-
 i:hover {
-  color: rgb(197, 162, 230);
+  color: $hover-icon;
+  cursor: pointer;
+}
+
+i {
+  text-align: center;
 }
 
 .fa-solid {
-  color: rgb(194, 117, 177);
+  color: $selected;
   -webkit-font-smoothing: antialiased;
   display: var(--fa-display, inline-block);
   font-style: normal;
@@ -103,7 +106,7 @@ i:hover {
 }
 
 .far-solid {
-  color: rgb(151, 151, 151);
+  color: $not-selected;
   -webkit-font-smoothing: antialiased;
   display: var(--fa-display, inline-block);
   font-style: normal;

@@ -36,7 +36,7 @@ async function getProduct(productUrl) {
 
     if(doesObjectExist) {
         cssClass = "fa-solid fa-xmark"
-        buttonText = "Remove from cart"
+        buttonText = "Remove"
     }
 
     document.title =`${product.title}`;

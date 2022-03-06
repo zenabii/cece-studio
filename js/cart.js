@@ -30,7 +30,7 @@ function createCart(renderFavs) {
                                                 <a href="product.html?id=${favorite.id}" class="product-title">${favorite.price} NOK</a>
                                             </div>
                                             <div class="product-info">
-                                                <i class="fa-solid fa-xmark fa-3x" data-id="${favorite.id}"></i>
+                                                <p class="black"><i class="fa-solid fa-xmark fa-3x" data-id="${favorite.id}"></i></p>
                                             </div>
                                             </div>              
                                         </div>          
@@ -56,9 +56,12 @@ function createCart(renderFavs) {
                                     <h5>
                                     Total price
                                     </h5>
+                                    <p class="total-price">
                                     ${total} NOK
-                                    <hr />`;                         
+                                    </p>`;                         
     }
+
+    removeClick();
 }
 
 
@@ -66,11 +69,14 @@ createCart(favorites);
 
 let listItems = [];
 
-const deleteProduct = document.querySelectorAll(".product-info i");
 
-deleteProduct.forEach(function(can) {
-    can.addEventListener("click", removeFromList);
-})
+function removeClick() {
+    const deleteProduct = document.querySelectorAll(".product-info i");
+
+    deleteProduct.forEach(function(can) {
+        can.addEventListener("click", removeFromList);
+    })
+}
 
 function removeFromList(event) {
 
