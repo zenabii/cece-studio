@@ -12152,8 +12152,18 @@ i {
   text-align: right;
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
 .img-header {
-  height: 1000px;
   max-width: 100%;
 }
 
@@ -12163,7 +12173,7 @@ i {
 
 .top-img {
   width: 100%;
-  height: 1000px;
+  height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -12175,18 +12185,6 @@ i {
   -o-object-fit: cover;
      object-fit: cover;
   height: 300px;
-}
-
-.header-padding {
-  padding: 20px;
-  display: -ms-grid;
-  display: grid;
-  position: absolute;
-  bottom: 150px;
-}
-
-.title-padding {
-  padding: 20px;
 }
 
 .full-width-img {
@@ -12219,6 +12217,22 @@ i {
   width: 200px;
   margin-top: 100px;
   margin-bottom: 20px;
+}
+
+.absolute,
+.header-padding {
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  padding-left: 10px;
+}
+
+.absolute {
+  top: 10%;
+}
+
+.header-padding {
+  top: 35%;
 }
 
 .shopButton {
@@ -12501,6 +12515,9 @@ form {
 footer {
   width: 100%;
   background-color: #2d2d2d;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .footer-grid {
@@ -12559,6 +12576,13 @@ footer {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+  }
+  .absolute,
+  .header-padding {
+    padding-left: 20px;
+  }
+  .absolute {
+    top: 28%;
   }
   .all-products {
     display: -ms-grid;
@@ -12633,22 +12657,20 @@ footer {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .absolute {
+    top: 36%;
+  }
+  .header-padding {
+    top: 45%;
+  }
   .top-img {
-    height: 700px;
+    height: 750px;
   }
   .product-grid {
     width: 1000px;
   }
   .product-desc-container {
     margin-top: 50px;
-  }
-  .title-padding {
-    position: absolute;
-    bottom: 640px;
-  }
-  .header-padding {
-    position: absolute;
-    bottom: 400px;
   }
   .img-header {
     height: 700px;
@@ -12689,6 +12711,12 @@ footer {
   .top-header-login {
     height: 400px;
   }
+  .absolute {
+    top: 38%;
+  }
+  .header-padding {
+    top: 45%;
+  }
   .product-img-container {
     width: 700px;
   }
@@ -12701,14 +12729,8 @@ footer {
     max-width: 1400px;
     margin: 0 auto;
   }
-  .header-padding {
-    bottom: 540px;
-  }
-  .title-padding {
-    bottom: 760px;
-  }
   .title-section {
-    max-width: 1360px;
+    width: 1360px;
     margin: 0 auto;
     padding-bottom: 80px;
     padding-top: 20px;

@@ -2,7 +2,7 @@ import { baseUrl } from "../settings/api.js";
 import displayMessage from "../components/displayMessage.js";
 
 
-async function heroBanner() {
+export default async function heroBanner() {
     
     const bannerUrl = baseUrl + "home?id=1";
     const heroContainer = document.querySelector(".img-header")
@@ -14,7 +14,7 @@ async function heroBanner() {
 
 
         heroContainer.innerHTML = `<img src="${bannerJson.hero_banner.formats.large.url}" alt="${bannerJson.hero_banner.alternativeText}" class="top-img">
-                                    <div class="title-padding"><h1 class="white-style">new arrivals</h1></div>
+                                    <div class="title-padding absolute"><h1 class="white-style">new arrivals</h1></div>
                                     <div class="header-padding">
                                         <h2>SS22</h2>
                                         <p class="text-wrap">Lorem ipsum dolor sit amet, adipiscing elit. Proin dictum purus in tempor. Duis ante.</p>
@@ -27,5 +27,3 @@ async function heroBanner() {
         heroContainer.innerHTML = displayMessage("error", error);
     }
 };
-
-export default heroBanner()
