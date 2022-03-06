@@ -75,6 +75,20 @@ h6 {
   color: $primary-white;
 }
 
+a {
+  &.hashtag_link {
+    text-decoration: underline;
+    color: $hashtag-link;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding-left: 12px;
+  }
+
+  &.hashtag_link:hover {
+    filter: invert(1);
+  }
+}
+
 p {
   font-family: "Roboto", sans-serif;
   color: $primary-white;

@@ -12,7 +12,7 @@ async function featuredProducts() {
         const json = await response.json();
 
         json.forEach(function (product) {
-            container.innerHTML += `<div class="featured-product-container">
+            container.innerHTML += `<div class="product-container">
                                         <a href="product.html?id=${product.id}">
                                         <img src="${product.image.formats.medium.url}" class="product-img" alt="${product.image.alternativeText != null ? product.image.alternativeText : "picture of " + product.title}">
                                         </a>
