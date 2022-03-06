@@ -13,7 +13,8 @@
     margin: 10px 0px 0px 10px;
   }
 
-  .featured-content {
+  .featured-content,
+  .all-products {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -33,11 +34,6 @@
 
   .absolute {
     top: 28%;
-  }
-
-  .all-products {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .product-grid {
@@ -68,14 +64,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .left-grid {
-    display: flex;
-    margin-right: 5px;
-  }
-
+  .left-grid,
   .right-grid {
     display: flex;
-    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .medium-img {
@@ -184,36 +176,20 @@
     margin: 0 auto;
   }
 
-  .title-section {
-    width: 1360px;
-    margin: 0 auto;
-    padding-top: 20px;
-  }
-
-  .featured-content {
-    max-width: 1360px;
-    margin: 0 auto;
-  }
-
-  .all-products {
-    max-width: 1360px;
-    margin: 0 auto;
-  }
-
-  .lookbook {
+  .featured-content,
+  .lookbook,
+  .all-products .title-section,
+  .news-grid {
     max-width: 1360px;
     margin: 0 auto;
   }
 
   .news-grid {
-    max-width: 1360px;
-    margin: 0 auto;
     padding-top: 50px;
   }
 
-  .full-width-grid {
-    max-width: 1360px;
-    margin: 0 auto;
+  .full-width-grid,
+  .title-section {
     margin-top: 20px;
   }
 
@@ -233,12 +209,9 @@
     margin: 0px 10px 50px 10px;
   }
 
-  .left-grid {
-    margin-right: 10px;
-  }
-
+  .left-grid,
   .right-grid {
-    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .text-content {
@@ -255,16 +228,8 @@
     font-size: 2rem;
   }
 
-  main {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-
-  .footer-grid {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-
+  main,
+  .footer-grid,
   .navbar {
     max-width: 1440px;
     margin: 0 auto;

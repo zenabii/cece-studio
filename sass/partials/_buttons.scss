@@ -1,45 +1,43 @@
-.shopButton {
-  border: 1px solid $primary-white;
+.shopButton,
+.shopButtonBlack {
   border-radius: 50%;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 1.2rem;
-  color: $primary-white;
   text-decoration: none;
   padding: 20px 40px 20px 40px;
   margin-top: 20px;
-  width: 200px;
   text-align: center;
+}
+
+.shopButton {
+  border: 1px solid $primary-white;
+  width: 200px;
+  color: $primary-white;
+}
+
+.shopButtonBlack {
+  border: 1px solid $primary-black;
+  color: $primary-black;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shopButton:hover,
+.shopButtonBlack:hover {
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .shopButton:hover {
   background-color: $primary-white;
   color: $primary-black;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.shopButtonBlack {
-  border: 1px solid $primary-black;
-  border-radius: 50%;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  color: $primary-black;
-  text-decoration: none;
-  padding: 20px 40px 20px 40px;
-  margin-top: 20px;
-  width: 250px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
 }
 
 .shopButtonBlack:hover {
   background-color: $primary-black;
   color: $primary-white;
-  font-weight: 600;
-  text-decoration: none;
 }
 
 .button-container {
@@ -84,6 +82,17 @@
   color: $primary-black;
 }
 
+.btn-outline-secondary {
+  border-color: $primary-white;
+  color: $primary-white;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn {
+  border-radius: 0;
+}
+
 i:hover {
   color: $hover-icon;
   cursor: pointer;
@@ -93,8 +102,8 @@ i {
   text-align: center;
 }
 
-.fa-solid {
-  color: $selected;
+.fa-solid,
+.far-solid {
   -webkit-font-smoothing: antialiased;
   display: var(--fa-display, inline-block);
   font-style: normal;
@@ -105,14 +114,10 @@ i {
   font-weight: 900;
 }
 
+.fa-solid {
+  color: $selected;
+}
+
 .far-solid {
   color: $not-selected;
-  -webkit-font-smoothing: antialiased;
-  display: var(--fa-display, inline-block);
-  font-style: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-rendering: auto;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
 }
