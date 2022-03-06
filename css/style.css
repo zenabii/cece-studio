@@ -9976,9 +9976,9 @@ body {
 
 .top-header {
   width: 100%;
-  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 400px;
 }
 
 .top-img {
@@ -9994,7 +9994,7 @@ body {
      object-position: top;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 300px;
+  height: 400px;
 }
 
 .full-width-img {
@@ -10498,6 +10498,10 @@ footer {
   .text-wrap {
     width: 20rem;
   }
+  main {
+    margin: 0 auto;
+    width: 100%;
+  }
   h3, .h3,
   .animationStyle {
     font-size: 3rem;
@@ -10699,11 +10703,13 @@ footer {
   h4, .h4 {
     font-size: 2rem;
   }
-  main,
   .footer-grid,
   .navbar {
     max-width: 1440px;
     margin: 0 auto;
+  }
+  main {
+    width: 1440px;
   }
   .edit-products {
     display: -ms-grid;
