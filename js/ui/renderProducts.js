@@ -4,7 +4,6 @@ import displayMessage from "../components/displayMessage.js";
 function renderProducts(products) {
     
     const container = document.querySelector(".all-products")
-
     container.innerHTML = "";
 
     products.forEach(function (product) {

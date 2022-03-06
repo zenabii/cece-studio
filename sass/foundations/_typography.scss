@@ -102,6 +102,13 @@ p {
     width: 300px;
     margin-top: 10px;
   }
+
+  &.loading {
+    color: $primary-black;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2rem;
+  }
 }
 
 .text-content {

@@ -12089,6 +12089,13 @@ p.details {
   margin-top: 10px;
 }
 
+p.loading {
+  color: #000000;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 2rem;
+}
+
 .text-content {
   padding-top: 40px;
 }
