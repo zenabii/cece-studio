@@ -10301,14 +10301,12 @@ i {
   border-radius: 0;
   background-color: transparent;
   color: #000000;
-  text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   border: 1px solid #fff;
 }
 
 .form-control__filter {
   border: 1px solid #000000;
-  text-transform: uppercase;
   font-family: "Roboto", sans-serif;
 }
 
