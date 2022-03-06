@@ -3,8 +3,10 @@ import renderProducts from "./ui/renderProducts.js";
 import { searchProducts } from "./components/searchProducts.js";
 import createMenu from "./ui/createMenu.js";
 import { cartCounter } from "./components/cartCounter.js";
+import footer from "./components/footer.js";
 
 createMenu();
+footer();
 
 let products;
 

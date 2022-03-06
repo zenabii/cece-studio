@@ -12041,8 +12041,8 @@ h5, .h5 {
   font-size: 3.5rem;
   color: black;
   text-align: left;
-  margin-top: 120px;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 h6, .h6 {
@@ -12571,6 +12571,9 @@ footer {
 
 /*MIN 768px*/
 @media screen and (min-width: 768px) {
+  .text-wrap {
+    width: 20rem;
+  }
   .featured-content {
     display: -ms-grid;
     display: grid;
@@ -12673,7 +12676,6 @@ footer {
     margin-top: 50px;
   }
   .img-header {
-    height: 700px;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -12716,6 +12718,10 @@ footer {
   }
   .header-padding {
     top: 45%;
+  }
+  .absolute,
+  .header-padding {
+    padding-left: 50px;
   }
   .product-img-container {
     width: 700px;

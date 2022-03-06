@@ -1,8 +1,10 @@
 import { getExistingProducts, saveFavs } from "./ui/FavFunctions.js";
 import { cartCounter } from "./components/cartCounter.js";
 import createMenu from "./ui/createMenu.js";
+import footer from "./components/footer.js";
 
 createMenu();
+footer();
 cartCounter();
 
 const favorites = getExistingProducts();

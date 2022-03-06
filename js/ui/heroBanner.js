@@ -17,7 +17,7 @@ export default async function heroBanner() {
                                     <div class="title-padding absolute"><h1 class="white-style">new arrivals</h1></div>
                                     <div class="header-padding">
                                         <h2>SS22</h2>
-                                        <p class="text-wrap">Lorem ipsum dolor sit amet, adipiscing elit. Proin dictum purus in tempor. Duis ante.</p>
+                                        <p class="text-wrap">Be one of the first to get your hands on our limited summer 2022 collection.</p>
                                         <a href="products.html" class="shopButton">shop now</a>
                                     </div>
                                                             

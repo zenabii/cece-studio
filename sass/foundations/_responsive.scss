@@ -18,6 +18,9 @@
 
 /*MIN 768px*/
 @include media-medium {
+  .text-wrap {
+    width: 20rem;
+  }
   .featured-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -113,7 +116,6 @@
   }
 
   .img-header {
-    height: 700px;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -166,6 +168,11 @@
 
   .header-padding {
     top: 45%;
+  }
+
+  .absolute,
+  .header-padding {
+    padding-left: 50px;
   }
 
   .product-img-container {

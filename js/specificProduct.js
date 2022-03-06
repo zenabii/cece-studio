@@ -2,8 +2,10 @@ import { baseUrl } from "./settings/api.js";
 import { getExistingProducts, saveFavs } from "./ui/FavFunctions.js";
 import createMenu from "./ui/createMenu.js";
 import { cartCounter } from "./components/cartCounter.js";
+import footer from "./components/footer.js";
 
 createMenu();
+footer();
 cartCounter();
 
 

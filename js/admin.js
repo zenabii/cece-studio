@@ -3,9 +3,11 @@ import { getToken } from "./settings/storage.js"
 import { cartCounter } from "./components/cartCounter.js";
 import { baseUrl } from "./settings/api.js";
 import createMenu from "./ui/createMenu.js";
+import footer from "./components/footer.js";
 
 
 createMenu();
+footer();
 cartCounter();
 
 const form = document.querySelector("form");
