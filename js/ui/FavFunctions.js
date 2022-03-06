@@ -1,7 +1,5 @@
 export function getExistingProducts() {
-
     const favs = localStorage.getItem("favorites");
-
     if(!favs) {
         return [];
     }

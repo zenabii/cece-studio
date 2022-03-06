@@ -1,15 +1,10 @@
-import { baseUrl } from "../settings/api.js";
-import displayMessage from "../components/displayMessage.js";
-
-function renderProducts(products) {
-    
+export default function renderProducts(products) {
     const container = document.querySelector(".all-products")
     container.innerHTML = "";
-
     products.forEach(function (product) {
         container.innerHTML += `<div class="product-container">
                                     <a href="product.html?id=${product.id}">
-                                    <img src="${product.image.formats.medium.url}" class="product-img" alt="${product.image.alternativeText != null ? product.image.alternativeText : "picture of " + product.title}">
+                                        <img src="${product.image.formats.medium.url}" class="product-img" alt="${product.image.alternativeText != null ? product.image.alternativeText : "picture of " + product.title}">
                                     </a>
                                     <div class="product-info-container">
                                         <div class="product-info">
@@ -17,11 +12,6 @@ function renderProducts(products) {
                                             <a href="product.html?id=${product.id}" class="product-title">${product.price} NOK</a>
                                         </div>
                                     </div>              
-                                </div>         
-        `
+                                </div>`
     });
-
-
 };
-
-export default renderProducts
