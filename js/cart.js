@@ -39,7 +39,7 @@ function createCart(renderFavs) {
     })
  
     if(renderFavs.length === 0) {
-        titleContainer.innerHTML += `<hr />
+        titleContainer.innerHTML = `<hr />
                                     <h3>
                                     cart is empty
                                     </h3>
@@ -47,7 +47,7 @@ function createCart(renderFavs) {
         priceContainer.innerHTML = "";
     
     } else {
-        titleContainer.innerHTML += `<hr />
+        titleContainer.innerHTML = `<hr />
                                     <h3>
                                     your products
                                     </h3>
@@ -74,9 +74,11 @@ deleteProduct.forEach(function(can) {
 
 function removeFromList(event) {
 
+    const updatedCart = getExistingProducts();
+
     const deleteThisProduct = event.target.dataset.id;
 
-    const newList = listItems.filter(function(item) {
+    const newList = updatedCart.filter(function(item) {
         if(deleteThisProduct !== item.id) {
             return true;
         }
@@ -87,4 +89,5 @@ function removeFromList(event) {
     createCart(listItems);
     saveFavs(listItems);
     cartCounter();
+    console.log(listItems)
 }

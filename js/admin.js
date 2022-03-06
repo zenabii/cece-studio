@@ -33,6 +33,8 @@ function submitForm(event) {
 
     if(nameValue.length === 0 || priceValue.length === 0 || isNaN(priceValue) || descriptionValue.length === 0 || imgValue.length === 0) {
         return displayMessage("warning", "Please supply proper values", ".message-container")
+    } else {
+        displayMessage("success", "You have successfully added a new product!", ".message-container")
     }
 
     addProduct();
@@ -76,7 +78,7 @@ async function addProduct() {
         const response = await fetch(url, options);
         const json = await response.json();
 
-        // form.reset();
+        form.reset();
         console.log(json);
         fetchProducts();
     }
@@ -114,7 +116,7 @@ function renderProducts(products) {
     products.forEach(function (product) {
         container.innerHTML += `<div class="product-container-edit">
                                     <a href="product.html?id=${product.id}">
-                                    <img src="${product.image.url}" class="product-img-edit" alt="${product.image.alternativeText}">
+                                    <img src="${product.image.url}" class="product-img-edit" alt="${product.image.alternativeText != null ? product.image.alternativeText : "picture of " + product.title}">
                                     </a>
                                     <form class="form-margin editForm" id="${product.id}">
                                     <div class="message-container"></div>

@@ -17,15 +17,17 @@ const productPrice = document.querySelector(".product-price")
 const productDescription = document.querySelector(".details")
 const addToCart = document.querySelector(".button-container")
 
-const favorites = getExistingProducts();
 
 const productUrl = baseUrl + "products/" + productId;
 
 async function getProduct(productUrl) {
+    const favorites = getExistingProducts();
     const response = await fetch(productUrl);
     const product = await response.json();
 
-    let cssClass = "far-solid"
+    let cssClass = "far-solid fa-heart "
+
+    let buttonText = "add to cart";
 
     const doesObjectExist = favorites.find(function(fav) {
         return parseInt(fav.id) == product.id;
@@ -33,7 +35,8 @@ async function getProduct(productUrl) {
 
 
     if(doesObjectExist) {
-        cssClass = "fa-solid"
+        cssClass = "fa-solid fa-xmark"
+        buttonText = "Remove from cart"
     }
 
     document.title =`${product.title}`;
@@ -41,7 +44,7 @@ async function getProduct(productUrl) {
     productName.innerHTML= product.title;
     productPrice.innerHTML = product.price + "NOK";
     productDescription.innerHTML = product.description;
-    addToCart.innerHTML = `<a href="#" class="shopButtonBlack" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-img="${product.image.formats.large.url}">add to cart <i class="${cssClass} fa-heart fa-2x"></i></a>`;
+    addToCart.innerHTML = `<a href="#" class="shopButtonBlack" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-img="${product.image.formats.large.url}">${buttonText}<i class="${cssClass} fa-2x"></i></a>`;
 
 
     addProductToCart();
@@ -85,6 +88,8 @@ function handleClick() {
         saveFavs(newFavs);
     }
 
+
+    getProduct(productUrl);
     
 
     cartCounter(JSON.parse(localStorage.getItem("favorites")).length);

@@ -9,7 +9,7 @@ function renderProducts(products) {
     products.forEach(function (product) {
         container.innerHTML += `<div class="product-container">
                                     <a href="product.html?id=${product.id}">
-                                    <img src="${product.image.formats.medium.url}" class="product-img" alt="${product.image.alternativeText}">
+                                    <img src="${product.image.formats.medium.url}" class="product-img" alt="${product.image.alternativeText != null ? product.image.alternativeText : "picture of " + product.title}">
                                     </a>
                                     <div class="product-info-container">
                                         <div class="product-info">
@@ -20,6 +20,7 @@ function renderProducts(products) {
                                 </div>         
         `
     });
+
 
 };
 
