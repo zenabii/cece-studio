@@ -9766,7 +9766,8 @@ h2.product-price, .product-price.h2 {
   letter-spacing: 0;
 }
 
-h3, .h3 {
+h3, .h3,
+.title-margin {
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
   font-size: 2rem;
@@ -9774,7 +9775,8 @@ h3, .h3 {
   text-align: center;
 }
 
-h3.description, .description.h3 {
+h3.description, .description.h3,
+.title-margin.description {
   margin-top: 50px;
 }
 
@@ -10501,7 +10503,8 @@ footer {
     width: 100%;
   }
   h3, .h3,
-  .animationStyle {
+  .animationStyle,
+  .title-margin {
     font-size: 3rem;
   }
   .form-margin {

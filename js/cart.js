@@ -35,17 +35,17 @@ function createCart(renderFavs) {
     })
     if(renderFavs.length === 0) {
         titleContainer.innerHTML = `<hr />
-                                    <h3>
+                                    <h1 class="title-margin">
                                     cart is empty
-                                    </h3>
+                                    </h1>
                                     <hr class="margin" />`
         
         priceContainer.innerHTML = "";
     } else {
         titleContainer.innerHTML = `<hr />
-                                    <h3>
+                                    <h1 class="title-margin">
                                     your products
-                                    </h3>
+                                    </h1>
                                     <hr />`
         priceContainer.innerHTML = `<hr />
                                     <h5>
