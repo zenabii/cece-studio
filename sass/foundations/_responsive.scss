@@ -21,9 +21,18 @@
   .text-wrap {
     width: 20rem;
   }
+
+  .form-margin {
+    margin: 10px 0px 0px 10px;
+  }
+
   .featured-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .img_logo {
+    width: 230px;
   }
 
   .absolute,
@@ -61,6 +70,7 @@
   .product-container-edit {
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
   }
 
   .news-grid {
@@ -238,7 +248,7 @@
   .product-container,
   .featured-product-container,
   .product-container-edit {
-    margin: 0px 10px 20px 10px;
+    margin: 0px 10px 50px 10px;
   }
 
   .left-grid {

@@ -11986,9 +11986,9 @@ fieldset:disabled .btn {
 h1, .h1 {
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
-  font-size: 3.5rem;
-  letter-spacing: 0.5rem;
-  line-height: 4.2rem;
+  font-size: 3.2rem;
+  letter-spacing: 0.3rem;
+  line-height: 3.2rem;
 }
 
 h1.product-name, .product-name.h1 {
@@ -12125,7 +12125,7 @@ p.loading {
 }
 
 .img_logo {
-  width: 230px;
+  width: 200px;
 }
 
 main {
@@ -12180,6 +12180,40 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
+}
+
+.menu-container {
+  z-index: 2;
+  position: relative;
+}
+
+.title-padding {
+  z-index: 1;
+}
+
+.top-img {
+  z-index: -1;
+}
+
+.back-to-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.back-to-top i {
+  color: #4174ff;
+  margin-bottom: 20px;
+}
+
+.back-to-top i:hover {
+  color: #979797;
 }
 
 .img-header {
@@ -12383,7 +12417,7 @@ i {
 }
 
 .product-img-edit {
-  width: 320px;
+  width: 300px;
 }
 
 .product-info {
@@ -12432,7 +12466,7 @@ i {
 }
 
 .form-margin {
-  margin: 10px 0px 0px 10px;
+  margin: 10px 0px;
 }
 
 .bg-light {
@@ -12543,6 +12577,11 @@ form {
   margin: 0 auto;
 }
 
+.gap-2 {
+  width: 250px;
+  margin: 0 auto;
+}
+
 footer {
   width: 100%;
   background-color: #2d2d2d;
@@ -12596,7 +12635,7 @@ footer {
 }
 
 .add-products {
-  width: 320px;
+  width: 300px;
   margin: 0 auto;
 }
 
@@ -12605,11 +12644,17 @@ footer {
   .text-wrap {
     width: 20rem;
   }
+  .form-margin {
+    margin: 10px 0px 0px 10px;
+  }
   .featured-content {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+  }
+  .img_logo {
+    width: 230px;
   }
   .absolute,
   .header-padding {
@@ -12656,6 +12701,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 20px;
   }
   .news-grid {
     display: -ms-grid;
@@ -12808,7 +12854,7 @@ footer {
   .product-container,
   .featured-product-container,
   .product-container-edit {
-    margin: 0px 10px 20px 10px;
+    margin: 0px 10px 50px 10px;
   }
   .left-grid {
     margin-right: 10px;

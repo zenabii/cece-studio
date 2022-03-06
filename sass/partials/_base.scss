@@ -1,5 +1,5 @@
 .img_logo {
-  width: 230px;
+  width: 200px;
 }
 
 main {
@@ -37,4 +37,33 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.menu-container {
+  z-index: 2;
+  position: relative;
+}
+
+.title-padding {
+  z-index: 1;
+}
+.top-img {
+  z-index: -1;
+}
+
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.back-to-top i {
+  color: $selected;
+  margin-bottom: 20px;
+}
+
+.back-to-top i:hover {
+  color: $not-selected;
 }

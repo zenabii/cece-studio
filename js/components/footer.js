@@ -14,7 +14,7 @@ export default function footer() {
                                         </p>
                                         </div>
                                         <div class="footer-flex-right">
-                                        <img src="img/logo-white.svg" alt="white cece studio logo" class="white-logo">
+                                        <a href="index.html"><img src="img/logo-white.svg" alt="white cece studio logo" class="white-logo"></a>
                                     </div>
                                     </div>`
     } catch (error) {
