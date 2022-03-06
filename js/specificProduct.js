@@ -31,11 +31,11 @@ async function getProduct(productUrl) {
         buttonText = "Remove"
     }
     document.title =`${product.title}`;
-    productImg.innerHTML = `<img src="${product.image.formats.large.url}" id="productImg" class="d-block w-100" alt="${product.image.alternativeText}">`;
+    productImg.innerHTML = `<img src="${product.image.url}" id="productImg" class="d-block w-100" alt="${product.image.alternativeText}">`;
     productName.innerHTML= product.title;
     productPrice.innerHTML = product.price + "NOK";
     productDescription.innerHTML = product.description;
-    addToCart.innerHTML = `<a href="#" class="shopButtonBlack" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-img="${product.image.formats.large.url}">${buttonText}<i class="${cssClass} fa-2x"></i></a>`;
+    addToCart.innerHTML = `<a href="#" class="shopButtonBlack" data-id="${product.id}" data-title="${product.title}" data-price="${product.price}" data-img="${product.image.url}">${buttonText}<i class="${cssClass} fa-2x"></i></a>`;
     addProductToCart();
 };
 

@@ -11,7 +11,7 @@ async function featuredProducts() {
         json.forEach(function (product) {
             container.innerHTML += `<div class="product-container">
                                         <a href="product.html?id=${product.id}">
-                                            <img src="${product.image.formats.medium.url}" class="product-img" alt="${product.image.alternativeText != null ? product.image.alternativeText : "picture of " + product.title}">
+                                            <img src="${product.image.url}" class="product-img" alt="${product.image.alternativeText != null ? product.image.alternativeText : "picture of " + product.title}">
                                         </a>
                                         <div class="product-info-container">
                                             <div class="product-info">
