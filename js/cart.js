@@ -9,24 +9,13 @@ const favorites = getExistingProducts();
 
 const productContainer = document.querySelector(".all-products");
 const titleContainer = document.querySelector(".title-section");
-
-if(favorites.length === 0) {
-    titleContainer.innerHTML += `<hr>
-                                <h3>
-                                cart is empty
-                                </h3>
-                                <hr>`
-} else {
-    titleContainer.innerHTML += `<hr>
-                                <h3>
-                                your products
-                                </h3>
-                                <hr>`
-}
+const priceContainer = document.querySelector(".price");
 
 
 function createCart(renderFavs) {
     productContainer.innerHTML = ``
+
+    let total = 0;
 
     renderFavs.forEach(favorite => {
         productContainer.innerHTML += `<div class="product-container">
@@ -44,8 +33,32 @@ function createCart(renderFavs) {
                                             </div>              
                                         </div>          
                                         `
+        total += parseFloat(favorite.price); 
     })
+ 
+    if(renderFavs.length === 0) {
+        titleContainer.innerHTML += `<hr />
+                                    <h3>
+                                    cart is empty
+                                    </h3>
+                                    <hr />`
+        priceContainer.innerHTML = "";
+    
+    } else {
+        titleContainer.innerHTML += `<hr />
+                                    <h3>
+                                    your products
+                                    </h3>
+                                    <hr />`
+        priceContainer.innerHTML = `<hr />
+                                    <h5>
+                                    Total price
+                                    </h5>
+                                    ${total} NOK
+                                    <hr />`;                         
+    }
 }
+
 
 createCart(favorites);
 
