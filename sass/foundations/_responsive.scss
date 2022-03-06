@@ -1,25 +1,12 @@
-@mixin media-medium {
-  @media screen and (min-width: 768px) {
-    @content;
-  }
-}
-
-@mixin media-large {
-  @media screen and (min-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin media-xlarge {
-  @media screen and (min-width: 1400px) {
-    @content;
-  }
-}
-
 /*MIN 768px*/
 @include media-medium {
   .text-wrap {
     width: 20rem;
+  }
+
+  h3,
+  .animationStyle {
+    font-size: 3rem;
   }
 
   .form-margin {
@@ -64,8 +51,7 @@
     margin-left: 20px;
   }
 
-  .product-container,
-  .featured-product-container {
+  .product-container {
     display: flex;
     flex-direction: column;
     margin: 0px 5px 20px 5px;
@@ -103,12 +89,6 @@
 
 /*MIN 1024px*/
 @include media-large {
-  .top-header {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-  }
-
   .absolute {
     top: 36%;
   }
@@ -173,7 +153,7 @@
 @include media-xlarge {
   .top-header,
   .top-header-login {
-    height: 400px;
+    height: 500px;
   }
 
   .absolute {
@@ -207,7 +187,6 @@
   .title-section {
     width: 1360px;
     margin: 0 auto;
-    padding-bottom: 80px;
     padding-top: 20px;
   }
 
@@ -250,7 +229,6 @@
   }
 
   .product-container,
-  .featured-product-container,
   .product-container-edit {
     margin: 0px 10px 50px 10px;
   }
@@ -275,10 +253,6 @@
 
   h4 {
     font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 3rem;
   }
 
   main {

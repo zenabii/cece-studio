@@ -43,7 +43,7 @@ function createCart(renderFavs) {
                                     <h3>
                                     cart is empty
                                     </h3>
-                                    <hr />`
+                                    <hr class="margin" />`
         priceContainer.innerHTML = "";
     
     } else {

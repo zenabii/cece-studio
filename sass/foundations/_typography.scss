@@ -33,7 +33,7 @@ h2 {
 h3 {
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
-  font-size: 1.9rem;
+  font-size: 2rem;
   color: black;
   text-align: center;
 
@@ -142,7 +142,6 @@ p {
 }
 
 .title-section {
-  margin-top: 80px;
   margin-bottom: 50px;
 }
 
@@ -151,4 +150,8 @@ p {
   color: $primary-black;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
+}
+
+.margin {
+  margin-bottom: 200px;
 }
