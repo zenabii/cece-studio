@@ -25,6 +25,13 @@ This is not a react app, so all that's required is download the repo and open it
 git clone git@github.com:zenabii/cece-studio.git
 ```
 
+### Admin login credentials
+```
+username: admin@admin.com
+password: Pass1234
+```
+
+
 
 ## Contact
 
