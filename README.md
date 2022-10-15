@@ -1,7 +1,7 @@
 # Cece Studio
 ## Semester Project 2
 
-![image](relative/path/to/semester-project-2-screenshot.png)
+![image]((https://user-images.githubusercontent.com/30080788/196008804-6188fbc5-aa8d-408f-a7ed-d440c4c9b4be.PNG)
 
 ## Description
 
