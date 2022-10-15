@@ -1,7 +1,7 @@
 # Cece Studio
 ## Semester Project 2
 
-![image](http://url/to/semester-project-2-screenshot.png)
+![image](relative/path/to/semester-project-2-screenshot.png)
 
 ## Description
 
